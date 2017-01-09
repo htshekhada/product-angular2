@@ -3,22 +3,10 @@ import { Component, OnInit, HostBinding } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Product, ProductService }  from './product.service';
 
+//check form : https://angular.io/resources/live-examples/forms/ts/eplnkr.html
 @Component({
-  template: `
-  <h2>HEROES</h2>
-  <div *ngIf="product">
-    <h3>"{{ product.name }}"</h3>
-    <div>
-      <label>Id: </label>{{ product.id }}</div>
-    <div>
-      <label>Name: </label>
-      <input [(ngModel)]="product.name" placeholder="name"/>
-    </div>
-    <p>
-      <button (click)="gotoHeroes()">Back</button>
-    </p>
-  </div>
-  `,
+  moduleId: module.id,
+  templateUrl: 'add-product.component.html',
 //  animations: [ slideInDownAnimation ]
 })
 export class AddProductComponent implements OnInit {

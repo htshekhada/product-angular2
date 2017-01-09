@@ -30,6 +30,6 @@ export class ProductListComponent implements OnInit {
   }
   isSelected(product: Product) { return product.id === this.selectedId; }
   onSelect(product: Product) {
-    this.router.navigate(['/product', product.id]);
+    this.router.navigate(['/product', { id: product.id, foo: 'foo' }]);
   }
 }
