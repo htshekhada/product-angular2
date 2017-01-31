@@ -6,6 +6,7 @@ import { AppComponent }     from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import {HomeComponent} from './home/home.component';
 import { ProductsModule }     from './product/products.module';
+import { SharedService } from './shared/shared.service';
 
 import { PageNotFoundComponent } from './not-found.component';
 
@@ -20,6 +21,9 @@ import { PageNotFoundComponent } from './not-found.component';
     AppComponent,
     HomeComponent,
     PageNotFoundComponent
+  ],
+  providers: [
+    SharedService
   ],
   bootstrap: [ AppComponent ]
 })
